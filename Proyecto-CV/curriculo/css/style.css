@@ -1,0 +1,79 @@
+* {
+  /* box-sizing: border-box;
+  outline: 1px solid limegreen !important; */
+  font-family: "Poppins", sans-serif;
+}
+body{
+  margin:auto;
+}
+
+#titulo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.name{
+  margin-left: 580px;
+  height: 250px;
+  width: 250px;
+
+}
+
+#name {
+  display: flex;
+  /* flex-direction: row; */
+  /* justify-content: center; Este centra los elementos horizontalmente */
+  align-items: center;
+}
+
+
+.image-profile {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  /* margin-right: 30px; */
+  margin: 30px 30px 30px 0px;
+}
+
+.contato {
+  padding: 5px 10px;
+  margin: 0px;
+}
+
+.Correo_Electronico {
+  padding: 5px 10px;
+  margin: 0px;
+  margin-left: -10px;
+}
+
+.my-info__contact h1 {
+  margin-top: 0px;
+  padding-left: 10px;
+}
+
+
+.my-grade__professional{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media (min-width: 576px) {  
+  body {
+    font-size: 13px;
+    margin: auto 10px;
+  }
+  .my-grade__professional{
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (min-width: 768px) { body {
+  font-size: 14px;
+  margin: auto 50px;
+}
+
+.my-grade__professional{
+  grid-template-columns: repeat(2, 1fr);
+} }
+
